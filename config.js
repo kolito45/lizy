@@ -44,7 +44,7 @@ module.exports = {
     MENUTEXT:"⚜ Xtroid ⚜",
     GIF_WEL: process.env.GIF_WEL === undefined ?'https://netfile2link.herokuapp.com/stream/13322' : process.env.GIF_WEL,
     GIF_BYE: process.env.GIF_BYE === undefined ?'https://webfilesdanuma.herokuapp.com/stream/14' : process.env.GIF_BYE,
-    CAPTION_KEY:" ⚜ X-Troid ⚜",
+    CAPTION_KEY: process.env.CP === undefined ? '⚜ X-Troid ⚜' : process.env.CP,
     LOGO_KEY: process.env.LOGOAPI === undefined ?'B6FlBogm1ELO1Z52WigX70G1TOe' : process.env.LOGOAPI,
     ALIVETEXT: process.env.ALIVE_MESSAGE === undefined ?'🧧 X-Troid 🧧\nName: X-Troid\nYoutube : youtu.be/mDnJ7q3S3eY' : process.env.ALIVE_MESSAGE,
     SEND_READ: process.env.SEND_READ === undefined ? false : convertToBool(process.env.SEND_READ),
