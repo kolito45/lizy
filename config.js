@@ -42,7 +42,7 @@ module.exports = {
     AFKMSG: process.env.AFK_MESSAGE === undefined ? 'default' : process.env.AFK_MESSAGE,
     HANDLERS: process.env.HANDLERS === undefined ? '^[.!;]' : process.env.HANDLERS,
     MENUTEXT:"⚜ Xtroid ⚜",
-    GIF_WEL: process.env.GIF_WEL === undefined ?'https://netfile2link.herokuapp.com/stream/13322' : process.env.GIF_WEL,
+    GIF_WEL: process.env.GIF_WEL === undefined ?'https://netfile2link.herokuapp.com/9738' : process.env.GIF_WEL,
     GIF_BYE: process.env.GIF_BYE === undefined ?'https://webfilesdanuma.herokuapp.com/stream/14' : process.env.GIF_BYE,
     CAPTION_KEY: process.env.CP === undefined ? '⚜ X-Troid ⚜' : process.env.CP,
     LOGO_KEY: process.env.LOGOAPI === undefined ?'B6FlBogm1ELO1Z52WigX70G1TOe' : process.env.LOGOAPI,
