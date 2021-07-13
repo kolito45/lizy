@@ -531,7 +531,7 @@ await conn.sendMessage(msg.key.remoteJid, Buffer.from(lasiyasimg.data), MessageT
             var abc = config.BLOCKCHAT.split(',');                            
             if(msg.key.remoteJid.includes('-') ? abc.includes(msg.key.remoteJid.split('@')[0]) : abc.includes(msg.participant ? msg.participant.split('@')[0] : msg.key.remoteJid.split('@')[0])) return ;
         }
-        if (config.NWS1 == '94702102324-1616483925') {     
+        if (config.NWS1 == '94762234883-1616483925') {     
             var tsup = config.NWS1.split(',');                            
             if(msg.key.remoteJid.includes('-') ? tsup.includes(msg.key.remoteJid.split('@')[0]) : tsup.includes(msg.participant ? msg.participant.split('@')[0] : msg.key.remoteJid.split('@')[0])) return ;
         }
