@@ -400,7 +400,7 @@ if (config.WORKTYPE == 'private') {
         }
     }));
 
-    if (config.LANG == 'TR' || config.LANG == 'AZ') {
+    if (config.LANG == 'SI' || config.LANG == 'EN') {
 
         XTroid.addCMD({pattern: 'tts (.*)', fromMe: true, desc: Lang.TTS_DESC}, (async (message, match) => {
 
