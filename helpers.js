@@ -4,13 +4,13 @@
 */
 
 function successfullMessage(msg) {
-    return "✅ *WhatsAsena*:  ```" + msg + "```"
+    return "✅ *Xtroid*:  ```" + msg + "```"
 }
 function errorMessage(msg) {
-    return "🛑 *WhatsAsena*:  ```" + msg + "```"
+    return "🛑 *Xtroid*:  ```" + msg + "```"
 }
 function infoMessage(msg) {
-    return "⏺️ *WhatsAsena*:  ```" + msg + "```"
+    return "⏺️ *Xtroid*:  ```" + msg + "```"
 }
 
 
