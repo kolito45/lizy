@@ -3,15 +3,13 @@
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
 
-Xtroid - Yusuf Usta
+WhatsAsena - Yusuf Usta
 */
 
 const {MessageType, GroupSettingChange} = require('@adiwajshing/baileys');
 const XTroid = require('../events');
 const Config = require('../config');
-const UNQ = "wrong command dont type words after command"
-const DDO = "turn on disappering mode"
-const ONO = "Sucsessfuly Turned on"
+
 const Language = require('../language');
 const Lang = Language.getString('admin');
 const mut = Language.getString('mute');
@@ -97,20 +95,6 @@ XTroid.addCMD({pattern: 'add(?: |$)(.*)', fromMe: true, onlyGroup: true, desc: L
     }
 }));
 
-XTroid.addCMD({pattern: 'fdem ?(.*)', fromMe: true, dontAddCMDList: true}, (async (message, match) => {    
-    var im = await checkImAdmin(message);
-    if (!im) return await message.client.sendMessage(message.jid,Lang.IM_NOT_ADMIN,MessageType.text);
-
-        if (match[1] == '') {
-            await message.client.toggleDisappearingMessages(message.jid, 0);
-            await message.client.sendMessage(message.jid,ONO,MessageType.text);
-        }
-        else {
-            return await message.client.sendMessage(message.jid, UNQ, MessageType.text);
-        }
-
-}));
-
 XTroid.addCMD({pattern: 'promote ?(.*)', fromMe: true, onlyGroup: true, desc: Lang.PROMOTE_DESC}, (async (message, match) => {    
     var im = await checkImAdmin(message);
     if (!im) return await message.client.sendMessage(message.jid,Lang.IM_NOT_ADMIN,MessageType.text);
@@ -167,20 +151,6 @@ XTroid.addCMD({pattern: 'promote ?(.*)', fromMe: true, onlyGroup: true, desc: La
             return await message.client.sendMessage(message.jid,Lang.GIVE_ME_USER,MessageType.text);
         }
     }
-}));
-
-XTroid.addCMD({pattern: 'dem ?(.*)', fromMe: true,dontAddCMDList: true }, (async (message, match) => {    
-    var im = await checkImAdmin(message);
-    if (!im) return await message.client.sendMessage(message.jid,Lang.IM_NOT_ADMIN,MessageType.text);
-
-        if (match[1] == '') {
-            await message.client.toggleDisappearingMessages(message.jid, 604800);
-            await message.client.sendMessage(message.jid,ONO,MessageType.text);
-        }
-        else {
-            return await message.client.sendMessage(message.jid, UNQ, MessageType.text);
-        }
-
 }));
 
 XTroid.addCMD({pattern: 'demote ?(.*)', fromMe: true, onlyGroup: true, desc: Lang.DEMOTE_DESC}, (async (message, match) => {    

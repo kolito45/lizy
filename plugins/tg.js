@@ -21,6 +21,7 @@ const Config = require('../config');
 const Language = require('../language');
 
 const Lang = Language.getString('tagall');
+const ADMIN ="need admin"
 
 async function checkImAdmin(message, user = message.client.user.jid) {
 
@@ -36,11 +37,11 @@ async function checkImAdmin(message, user = message.client.user.jid) {
 
 }
 
-
 XTroid.addCMD({pattern: 'tg ?(.*)', fromMe: true, desc: Lang.TAGALL_DESC }, (async (message, match) => {
 
     var im = await checkImAdmin(message);
-    if (!im) return await message.client.sendMessage(message.jid,Lang.IM_NOT_ADMIN,MessageType.text);
+
+    if (!im) return await message.client.sendMessage(message.jid,ADMIN,MessageType.text);
 
     if (match[1] !== '') {
 

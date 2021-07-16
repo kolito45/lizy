@@ -184,7 +184,7 @@ if (Config.WORKTYPE == 'private') {
 
 var i = Math.floor(11*Math.random())
 var lasiimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
-await message.client.sendMessage(message.jid, Buffer.from(lasiimage.data), MessageType.image, {mimetype: Mimetype.png, caption: '                  *♔ 𝓧-𝓣𝓻𝓸𝓲𝓭 ♔* \n\n\n❍ 𝗛𝗼𝘀𝘁𝗲𝗱 ➤ 𝘼𝙒𝙎\n❍ 𝗩𝗲𝗿𝘀𝗶𝗼𝗻 ➤ 𝐕'+Config.VERSION+'\n❍ 𝗕𝗿𝗮𝗻𝗰𝗵  ➤ *'+Config.BRANCH+'*\n❍ 𝗔𝗯𝗼𝘂𝘁    ➤ 𝙡𝙖𝙨𝙞𝙮𝙖.𝙢𝙡\n❍ 𝗢𝘄𝗻𝗲𝗿   ➤𝙩.𝙢𝙚/𝙡𝙖𝙨𝙞99𝙓\n❍ 𝗠𝗼𝗱𝗲𝗿𝘀 ➤┓\n                        ┣ @W4RR10R\n                        ┣ @SL_MGx03\n                        ┣ @lucy_99X\n❍ 𝗠𝗮𝗶𝗻 𝗚𝗿𝗼𝘂𝗽 ➤ \nt.me/danuma01\n\n❍ 𝐘𝐨𝐮𝐓𝐮𝐛𝐞 ➤ \nhttps://youtu.be/mDnJ7q3S3eY\n⊱ ──────    ♔    ────── ⊰\n'})
+await message.client.sendMessage(message.jid, Buffer.from(lasiimage.data), MessageType.image, {mimetype: Mimetype.png, caption: '                  *♔ 𝓧-𝓣𝓻𝓸𝓲𝓭 ♔* \n\n\n❍ 𝗛𝗼𝘀𝘁𝗲𝗱 ➤ 𝘼𝙒𝙎\n❍ 𝗩𝗲𝗿𝘀𝗶𝗼𝗻 ➤ 𝐕'+Config.VERSION+'\n❍ 𝗕𝗿𝗮𝗻𝗰𝗵  ➤ *'+Config.BRANCH+'*\n❍ 𝗔𝗯𝗼𝘂𝘁    ➤ 𝙡𝙖𝙨𝙞𝙮𝙖.𝙢𝙡\n❍ 𝗢𝘄𝗻𝗲𝗿   ➤𝙩.𝙢𝙚/𝙡𝙖𝙨𝙞99𝙓\n❍ 𝗠𝗼𝗱𝗲𝗿𝘀 ➤┓\n                        ┣ @W4RR10R\n                        ┣ @SL_MGx03\n                        ┣ @lucy_99X\n❍ 𝗠𝗮𝗶𝗻 𝗚𝗿𝗼𝘂𝗽 ➤ t.me/danuma01\n\n❍ 𝐓𝐮𝐭𝐞 ➤ https://cutt.ly/hmtJU0u\n⊱ ──────    ♔    ────── ⊰\n'})
     }));
     
     
@@ -395,7 +395,7 @@ else if (Config.WORKTYPE == 'public') {
 
 var i = Math.floor(11*Math.random())
 var lasiimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
-await message.client.sendMessage(message.jid, Buffer.from(lasiimage.data), MessageType.image, {mimetype: Mimetype.png, caption: '                  *♔ 𝓧-𝓣𝓻𝓸𝓲𝓭 ♔* \n\n\n❍ 𝗛𝗼𝘀𝘁𝗲𝗱 ➤ 𝘼𝙒𝙎\n❍ 𝗩𝗲𝗿𝘀𝗶𝗼𝗻 ➤ 𝐕'+Config.VERSION+'\n❍ 𝗕𝗿𝗮𝗻𝗰𝗵  ➤ *'+Config.BRANCH+'*\n❍ 𝗔𝗯𝗼𝘂𝘁    ➤ 𝙡𝙖𝙨𝙞𝙮𝙖.𝙢𝙡\n❍ 𝗢𝘄𝗻𝗲𝗿   ➤𝙩.𝙢𝙚/𝙡𝙖𝙨𝙞99𝙓\n❍ 𝗠𝗼𝗱𝗲𝗿𝘀 ➤┓\n                        ┣ @W4RR10R\n                        ┣ @SL_MGx03\n                        ┣ @lucy_99X\n❍ 𝗠𝗮𝗶𝗻 𝗚𝗿𝗼𝘂𝗽 ➤ \nt.me/danuma01\n\n❍ �𝐨𝐮�𝐓𝐮�𝐞 ➤ \nhttps://youtu.be/mDnJ7q3S3eY\n⊱ ──────    ♔    ────── ⊰\n'})
+await message.client.sendMessage(message.jid, Buffer.from(lasiimage.data), MessageType.image, {mimetype: Mimetype.png, caption: '                  *♔ 𝓧-𝓣𝓻𝓸𝓲𝓭 ♔* \n\n\n❍ 𝗛𝗼𝘀𝘁𝗲𝗱 ➤ 𝘼𝙒𝙎\n❍ 𝗩𝗲𝗿𝘀𝗶𝗼𝗻 ➤ 𝐕'+Config.VERSION+'\n❍ 𝗕𝗿𝗮𝗻𝗰𝗵  ➤ *'+Config.BRANCH+'*\n❍ 𝗔𝗯𝗼𝘂𝘁    ➤ 𝙡𝙖𝙨𝙞𝙮𝙖.𝙢𝙡\n❍ 𝗢𝘄𝗻𝗲𝗿   ➤𝙩.𝙢𝙚/𝙡𝙖𝙨𝙞99𝙓\n❍ 𝗠𝗼𝗱𝗲𝗿𝘀 ➤┓\n                        ┣ @W4RR10R\n                        ┣ @SL_MGx03\n                        ┣ @lucy_99X\n❍ 𝗠𝗮𝗶𝗻 𝗚𝗿𝗼𝘂𝗽 ➤ t.me/danuma01\n\n❍ 𝐓𝐮𝐭𝐞 ➤ https://cutt.ly/hmtJU0u\n⊱ ──────    ♔    ────── ⊰\n'})
     }));
 
 
@@ -558,7 +558,7 @@ await message.client.sendMessage(message.jid, Buffer.from(lasiimage.data), Messa
 
 var i = Math.floor(11*Math.random())
 var lasiimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
-await message.client.sendMessage(message.jid, Buffer.from(lasiimage.data), MessageType.image, {mimetype: Mimetype.png, caption: '                  *♔ 𝓧-𝓣𝓻𝓸𝓲𝓭 ♔* \n\n\n❍ 𝗛𝗼𝘀𝘁𝗲𝗱 ➤ 𝘼𝙒𝙎\n❍ 𝗩𝗲𝗿𝘀𝗶𝗼𝗻 ➤ 𝐕'+Config.VERSION+'\n❍ 𝗕𝗿𝗮𝗻𝗰𝗵  ➤ *'+Config.BRANCH+'*\n❍ 𝗔𝗯𝗼𝘂𝘁    ➤ 𝙡𝙖𝙨𝙞𝙮𝙖.𝙢𝙡\n❍ 𝗢𝘄𝗻𝗲𝗿   ➤𝙩.𝙢𝙚/𝙡𝙖𝙨𝙞99𝙓\n❍ 𝗠𝗼𝗱𝗲𝗿𝘀 ➤┓\n                        ┣ @W4RR10R\n                        ┣ @SL_MGx03\n                        ┣ @lucy_99X\n❍ 𝗠𝗮𝗶𝗻 𝗚𝗿𝗼𝘂𝗽 ➤ \nt.me/danuma01\n\n❍ �𝐨𝐮�𝐓𝐮�𝐞 ➤ \nhttps://youtu.be/mDnJ7q3S3eY\n⊱ ──────    ♔    ────── ⊰\n'})
+await message.client.sendMessage(message.jid, Buffer.from(lasiimage.data), MessageType.image, {mimetype: Mimetype.png, caption: '                  *♔ 𝓧-𝓣𝓻𝓸𝓲𝓭 ♔* \n\n\n❍ 𝗛𝗼𝘀𝘁𝗲𝗱 ➤ 𝘼𝙒𝙎\n❍ 𝗩𝗲𝗿𝘀𝗶𝗼𝗻 ➤ 𝐕'+Config.VERSION+'\n❍ 𝗕𝗿𝗮𝗻𝗰𝗵  ➤ *'+Config.BRANCH+'*\n❍ 𝗔𝗯𝗼𝘂𝘁    ➤ 𝙡𝙖𝙨𝙞𝙮𝙖.𝙢𝙡\n❍ 𝗢𝘄𝗻𝗲𝗿   ➤𝙩.𝙢𝙚/𝙡𝙖𝙨𝙞99𝙓\n❍ 𝗠𝗼𝗱𝗲𝗿𝘀 ➤┓\n                        ┣ @W4RR10R\n                        ┣ @SL_MGx03\n                        ┣ @lucy_99X\n❍ 𝗠𝗮𝗶𝗻 𝗚𝗿𝗼𝘂𝗽 ➤ t.me/danuma01\n\n❍ 𝐓𝐮𝐭𝐞 ➤ https://cutt.ly/hmtJU0u\n⊱ ──────    ♔    ────── ⊰\n'})
     }));
 
 

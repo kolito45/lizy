@@ -9,7 +9,16 @@ const fs = require('fs');
 if (Config.WORKTYPE == 'private') {
 
    XTroid.addCMD({pattern: 'apkmod', fromMe: true}, (async (message, match) => {
-      await message.sendMessage('┏━━━━━━━━━━━━━━━━━━━\n┃〘 ☣️ *Mod Apps* ☣️ 〙\n*Join With Our Mod App Store*\nt.me/danuma\n┗━━━━━━━━━━━━━━━━━━━\n');
+      await message.sendMessage('You can get 1000+ Mod apps from our mod stor\n*t.me/danuma*');
+   }));
+
+   XTroid.addCMD({pattern: 'fatp', fromMe: false}, (async (message, match) => {        
+        await message.client.sendMessage(
+            message.jid, 
+            fs.readFileSync("media/gif/apk/FATP.mp3"),
+            MessageType.audio, 
+            {mimetype: Mimetype.mp4Audio}
+        )
    }));
 
 
@@ -18,7 +27,16 @@ if (Config.WORKTYPE == 'private') {
 else if (Config.WORKTYPE == 'public') {
 
    XTroid.addCMD({pattern: 'apkmod', fromMe: false}, (async (message, match) => {
-      await message.sendMessage('┏━━━━━━━━━━━━━━━━━━━\n┃〘 ☣️ *Mod Apps* ☣️ 〙\n*Join With Our Mod App Store*\nt.me/danuma\n┗━━━━━━━━━━━━━━━━━━━\n');
+      await message.sendMessage('You can get 1000+ Mod apps from our mod stor\n*t.me/danuma*');
    }));
     
+   XTroid.addCMD({pattern: 'fatp', fromMe: false}, (async (message, match) => {        
+        await message.client.sendMessage(
+            message.jid, 
+            fs.readFileSync("media/gif/apk/FATP.mp3"),
+            MessageType.audio, 
+            {mimetype: Mimetype.mp4Audio}
+        )
+   }));
+
 }

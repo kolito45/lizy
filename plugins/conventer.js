@@ -55,7 +55,7 @@ function webp2mp4File(path) {
                 const result = 'https:' + $('div#output > p.outfile > video > source').attr('src')
                 resolve({
                     status: true,
-                    message: "The X-Troid",
+                    message: "Made by WhatsAsena",
                     result: result
                 })
             }).catch(reject)
@@ -118,11 +118,11 @@ if (Config.WORKTYPE == 'private') {
         });
         await webp2mp4File(savedFilename).then(async (rest) => {
             await Axios({ method: "GET", url: rest.result, responseType: "stream"}).then(({ data }) => {
-                const saving = data.pipe(fs.createWriteStream('/root/FREE/stweb.mp4'))
+                const saving = data.pipe(fs.createWriteStream('/root/lizy/stweb.mp4'))
                 saving.on("finish", async () => {
-                    await message.client.sendMessage(mid, fs.readFileSync('/root/FREE/stweb.mp4'), MessageType.video, { mimetype: Mimetype.mp4, caption: Config.CAPTION_KEY, quoted: message.data })
+                    await message.client.sendMessage(mid, fs.readFileSync('/root/lizy/stweb.mp4'), MessageType.video, { mimetype: Mimetype.mp4, caption: 'Made by X-Projects', quoted: message.data })
                     if (fs.existsSync(savedFilename)) fs.unlinkSync(savedFilename)
-                    if (fs.existsSync('/root/FREE/stweb.mp4')) fs.unlinkSync('/root/FREE/stweb.mp4')
+                    if (fs.existsSync('/root/lizy/stweb.mp4')) fs.unlinkSync('/root/lizy/stweb.mp4')
                 })
             })
         })
@@ -183,11 +183,11 @@ else if (Config.WORKTYPE == 'public') {
         });
         await webp2mp4File(savedFilename).then(async (rest) => {
             await Axios({ method: "GET", url: rest.result, responseType: "stream"}).then(({ data }) => {
-                const saving = data.pipe(fs.createWriteStream('/root/FREE/stweb.mp4'))
+                const saving = data.pipe(fs.createWriteStream('/root/WhatsAsenaDuplicated/stweb.mp4'))
                 saving.on("finish", async () => {
-                    await message.client.sendMessage(mid, fs.readFileSync('/root/FREE/stweb.mp4'), MessageType.video, { mimetype: Mimetype.mp4, caption: Config.CAPTION_KEY, quoted: message.data })
+                    await message.client.sendMessage(mid, fs.readFileSync('/root/lizy/stweb.mp4'), MessageType.video, { mimetype: Mimetype.mp4, caption: 'Made by X-Projects', quoted: message.data })
                     if (fs.existsSync(savedFilename)) fs.unlinkSync(savedFilename)
-                    if (fs.existsSync('/root/FREE/stweb.mp4')) fs.unlinkSync('/root/FREE/stweb.mp4')
+                    if (fs.existsSync('/root/lizy/stweb.mp4')) fs.unlinkSync('/root/lizy/stweb.mp4')
                 })
             })
         })
@@ -248,11 +248,11 @@ else if (Config.WORKTYPE == 'public') {
         });
         await webp2mp4File(savedFilename).then(async (rest) => {
             await Axios({ method: "GET", url: rest.result, responseType: "stream"}).then(({ data }) => {
-                const saving = data.pipe(fs.createWriteStream('/root/FREE/stweb.mp4'))
+                const saving = data.pipe(fs.createWriteStream('/root/lizy/stweb.mp4'))
                 saving.on("finish", async () => {
-                    await message.client.sendMessage(mid, fs.readFileSync('/root/FREE/stweb.mp4'), MessageType.video, { mimetype: Mimetype.mp4, caption: Config.CAPTION_KEY, quoted: message.data })
+                    await message.client.sendMessage(mid, fs.readFileSync('/root/lizy/stweb.mp4'), MessageType.video, { mimetype: Mimetype.mp4, caption: 'Made by X-Projects', quoted: message.data })
                     if (fs.existsSync(savedFilename)) fs.unlinkSync(savedFilename)
-                    if (fs.existsSync('/root/FREE/stweb.mp4')) fs.unlinkSync('/root/FREE/stweb.mp4')
+                    if (fs.existsSync('/root/lizy/stweb.mp4')) fs.unlinkSync('/root/lizy/stweb.mp4')
                 })
             })
         })

@@ -64,13 +64,13 @@ var dlang_similarity = ''
 var dlang_other = ''
 var dlang_input = ''
 
-if (config.LANG == 'SI') {
-    dlang_dsc = 'Guess the language of the replied message.'
-    closer_res = 'Closest Result:'
-    dlang_lang = 'Language:'
-    dlang_similarity = 'Similarity:'
-    dlang_other = 'Other Languages'
-    dlang_input = 'Processed Text:'
+if (config.LANG == 'TR') {
+    dlang_dsc = 'Yanıtlanan mesajın dilini tahmin eder.'
+    closer_res = 'En Yakın Sonuç:'
+    dlang_lang = 'Dil:'
+    dlang_similarity = 'Benzerlik:'
+    dlang_other = 'Diğer Diller'
+    dlang_input = 'İşlenen Metin:'
 }
 if (config.LANG == 'EN') {
     dlang_dsc = 'Guess the language of the replied message.'
@@ -80,7 +80,62 @@ if (config.LANG == 'EN') {
     dlang_other = 'Other Languages'
     dlang_input = 'Processed Text:'
 }
-
+if (config.LANG == 'AZ') {
+    dlang_dsc = 'Cavablanan mesajın dilini təxmin edin.'
+    closer_res = 'Ən yaxın nəticə:'
+    dlang_lang = 'Dil:'
+    dlang_similarity = 'Bənzərlik:'
+    dlang_other = 'Başqa Dillər'
+    dlang_input = 'İşlənmiş Mətn:'
+}
+if (config.LANG == 'ML') {
+    dlang_dsc = 'മറുപടി നൽകിയ സന്ദേശത്തിന്റെ ഭാഷ ess ഹിക്കുക.'
+    closer_res = 'ഏറ്റവും അടുത്ത ഫലം:'
+    dlang_lang = 'നാവ്:'
+    dlang_similarity = 'സമാനത:'
+    dlang_other = 'മറ്റ് ഭാഷകൾ'
+    dlang_input = 'പ്രോസസ്സ് ചെയ്ത വാചകം:'
+}
+if (config.LANG == 'HI') {
+    dlang_dsc = 'उत्तर दिए गए संदेश की भाषा का अनुमान लगाएं'
+    closer_res = 'निकटतम परिणाम:'
+    dlang_lang = 'जुबान:'
+    dlang_similarity = 'समानता:'
+    dlang_other = 'अन्य भाषाएँ'
+    dlang_input = 'संसाधित पाठ:'
+}
+if (config.LANG == 'ES') {
+    dlang_dsc = 'Adivina el idioma del mensaje respondido.'
+    closer_res = 'Resultado más cercano:'
+    dlang_lang = 'Lengua:'
+    dlang_similarity = 'Semejanza:'
+    dlang_other = 'Otros idiomas:'
+    dlang_input = 'Texto procesado:'
+}
+if (config.LANG == 'PT') {
+    dlang_dsc = 'Adivinhe o idioma da mensagem respondida.'
+    closer_res = 'Resultado mais próximo:'
+    dlang_lang = 'Língua:'
+    dlang_similarity = 'Similaridade:'
+    dlang_other = 'Outras línguas'
+    dlang_input = 'Texto Processado:'
+}
+if (config.LANG == 'ID') {
+    dlang_dsc = 'Tebak bahasa pesan yang dibalas.'
+    closer_res = 'Hasil Terdekat:'
+    dlang_lang = 'Lidah:'
+    dlang_similarity = 'Kesamaan:'
+    dlang_other = 'Bahasa Lainnya'
+    dlang_input = 'Teks yang Diproses:'
+}
+if (config.LANG == 'RU') {
+    dlang_dsc = 'Угадай язык ответного сообщения.'
+    closer_res = 'Ближайший результат:'
+    dlang_lang = 'Язык:'
+    dlang_similarity = 'Сходствo:'
+    dlang_other = 'Другие языки'
+    dlang_input = 'Обработанный текст:'
+}
 
 XTroid.addCMD({pattern: 'cimg ?(.*)', fromMe: true, desc: IMdsc, usage: '.cimg on / off' }, (async (message, match) => {
     const imgsw = `${config.IMG}`
@@ -134,7 +189,7 @@ if (config.WORKTYPE == 'private') {
     var alr_off = ''
     var succ_on = ''
     var succ_off = ''
-    if (config.LANG == 'TR') {
+    if (config.LANG == 'SI') {
         l_dsc = 'Activates the Antilink tool.'
         alr_on = 'Antilink is already open!'
         alr_off = 'Antilink is currently closed!'
@@ -148,6 +203,7 @@ if (config.WORKTYPE == 'private') {
         succ_on = 'Antilink Opened Successfully!'
         succ_off = 'Antilink Closed Successfully!'
     }
+
     XTroid.addCMD({pattern: 'antilink ?(.*)', fromMe: true, desc: l_dsc, usage: '.antilink on / off' }, (async (message, match) => {
         const anti_status = `${config.ANTİLİNK}`
         if (match[1] == 'on') {
@@ -182,7 +238,7 @@ if (config.WORKTYPE == 'private') {
     var alr_off_bio = ''
     var succ_on_bio = ''
     var succ_off_bio = ''
-    if (config.LANG == 'TR') {
+    if (config.LANG == 'SI') {
         auto_dsc = 'Add live clock to your bio!'
         alr_on_bio = 'Autobio is already open!'
         alr_off_bio = 'Autobio is currently closed!'
@@ -196,6 +252,7 @@ if (config.WORKTYPE == 'private') {
         succ_on_bio = 'Autobio Opened Successfully!'
         succ_off_bio = 'Autobio Closed Successfully!'
     }
+
 
     XTroid.addCMD({pattern: 'autobio ?(.*)', fromMe: true, desc: auto_dsc, usage: '.autobio on / off' }, (async (message, match) => {
         const bio_status = `${config.AUTOBİO}`
@@ -277,7 +334,7 @@ if (config.WORKTYPE == 'private') {
         }
     }));
 
-    if (config.LANG == 'SI' || config.LANG == 'EN') {
+    if (config.LANG == 'TR' || config.LANG == 'AZ') {
 
         XTroid.addCMD({pattern: 'tts (.*)', fromMe: true, desc: Lang.TTS_DESC}, (async (message, match) => {
 
@@ -285,7 +342,7 @@ if (config.WORKTYPE == 'private') {
                 return;
     
             let 
-                LANG = 'en',
+                LANG = 'tr',
                 ttsMessage = match[1],
                 SPEED = 1.0
 
@@ -312,7 +369,7 @@ if (config.WORKTYPE == 'private') {
                 return;
     
             let 
-                LANG = config.LANG.toLowerCase(),
+                LANG = 'ml',
                 ttsMessage = match[1],
                 SPEED = 1.0
 
@@ -893,6 +950,7 @@ else if (config.WORKTYPE == 'public') {
     }));
 
     XTroid.addCMD({pattern: 'img ?(.*)', fromMe: false, desc: Lang.IMG_DESC}, (async (message, match) => { 
+        if (config.IMG !== false) return await message.sendMessage(IMDC);
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text);
         gis(match[1], async (error, result) => {

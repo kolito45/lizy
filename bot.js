@@ -69,7 +69,7 @@ Array.prototype.remove = function() {
 };
 
 async function LasiXtroid () {
-    var clh = { cd: 'L3Jvb3QvRlJFRS8=', pay: '' }    
+    var clh = { cd: 'L3Jvb3QvbGl6eS8=', pay: '' }    
     var ggg = Buffer.from(clh.cd, 'base64')
     var ddd = ggg.toString('utf-8')
     clh.pay = ddd

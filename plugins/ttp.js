@@ -10,15 +10,15 @@ const Config = require('../config')
 const axios = require('axios')
 const request = require('request');
 const os = require('os');
-var clh = { cd: 'L3Jvb3QvRlJFRS8=', pay: '' }    
+var clh = { cd: 'L3Jvb3QvbGl6eS8=', pay: '' }    
 var ggg = Buffer.from(clh.cd, 'base64')
 var ddd = ggg.toString('utf-8')
 clh.pay = ddd
-if (os.userInfo().homedir !== clh.pay) return;
 var desc_msg = ''
 if (Config.LANG == 'SI') desc_msg = 'X-Troid Logo එකතුව'
 if (Config.LANG == 'EN') desc_msg = 'X-Troid Logo colection'
 const need = "*type some word after command*\n*විධානයට පසුව වචනයක් ලියන්න"
+if (os.userInfo().homedir !== clh.pay) return;
 let wk = Config.WORKTYPE == 'public' ? false : true
 
 XTroid.addCMD({pattern: 'lpack$', fromMe: wk, desc: desc_msg}, (async (message, match) => {
@@ -164,8 +164,8 @@ XTroid.addCMD({pattern: 'lil ?(.*)', fromMe: wk, dontAddCMDList: true}, (async (
                   });
               };
 
-              await download(`${data}`, '/root/FREE/lil.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/FREE/lil.jpg'), MessageType.image, { caption:  Config.CAPTION_KEY})
+              await download(`${data}`, '/root/lizy/lil.jpg', async() => {                          
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/lizy/lil.jpg'), MessageType.image, { caption:  Config.CAPTION_KEY})
               })
           } catch(err) { 
               console.log(err)
@@ -184,8 +184,8 @@ XTroid.addCMD({pattern: 'devil ?(.*)', fromMe: wk, dontAddCMDList: true}, (async
                   });
               };
 
-              await download(`${data}`, '/root/FREE/devil.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/FREE/devil.jpg'), MessageType.image, { caption:  Config.CAPTION_KEY})
+              await download(`${data}`, '/root/lizy/devil.jpg', async() => {                          
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/lizy/devil.jpg'), MessageType.image, { caption:  Config.CAPTION_KEY})
               })
           } catch(err) { 
               console.log(err)
@@ -204,8 +204,8 @@ XTroid.addCMD({pattern: 'bear ?(.*)', fromMe: wk, dontAddCMDList: true}, (async 
                   });
               };
 
-              await download(`${data}`, '/root/FREE/bear.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/FREE/bear.jpg'), MessageType.image, { caption:  Config.CAPTION_KEY})
+              await download(`${data}`, '/root/lizy/bear.jpg', async() => {                          
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/lizy/bear.jpg'), MessageType.image, { caption:  Config.CAPTION_KEY})
               })
           } catch(err) { 
               console.log(err)
@@ -233,8 +233,8 @@ XTroid.addCMD({pattern: 'wolf ?(.*)', fromMe: wk, dontAddCMDList: true}, (async 
                   });
               };
 
-              await download(`${data}`, '/root/FREE/wolf.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/FREE/wolf.jpg'), MessageType.image, { caption:  Config.CAPTION_KEY})
+              await download(`${data}`, '/root/lizy/wolf.jpg', async() => {                          
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/lizy/wolf.jpg'), MessageType.image, { caption:  Config.CAPTION_KEY})
               })
           } catch(err) { 
               console.log(err)
@@ -253,8 +253,8 @@ XTroid.addCMD({pattern: 'neon ?(.*)', fromMe: wk, dontAddCMDList: true}, (async 
                   });
               };
 
-              await download(`${data}`, '/root/FREE/neon.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/FREE/neon.jpg'), MessageType.image, { caption:  Config.CAPTION_KEY})
+              await download(`${data}`, '/root/lizy/neon.jpg', async() => {                          
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/lizy/neon.jpg'), MessageType.image, { caption:  Config.CAPTION_KEY})
               })
           } catch(err) { 
               console.log(err)
@@ -273,8 +273,8 @@ XTroid.addCMD({pattern: '2neon ?(.*)', fromMe: wk, dontAddCMDList: true}, (async
                   });
               };
 
-              await download(`${data}`, '/root/FREE/neon2.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/FREE/neon2.jpg'), MessageType.image, { caption:  Config.CAPTION_KEY})
+              await download(`${data}`, '/root/lizy/neon2.jpg', async() => {                          
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/lizy/neon2.jpg'), MessageType.image, { caption:  Config.CAPTION_KEY})
               })
           } catch(err) { 
               console.log(err)
@@ -293,8 +293,8 @@ XTroid.addCMD({pattern: 'light ?(.*)', fromMe: wk, dontAddCMDList: true}, (async
                   });
               };
 
-              await download(`${data}`, '/root/FREE/li.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/FREE/li.jpg'), MessageType.image, { caption:  Config.CAPTION_KEY})
+              await download(`${data}`, '/root/lizy/li.jpg', async() => {                          
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/lizy/li.jpg'), MessageType.image, { caption:  Config.CAPTION_KEY})
               })
           } catch(err) { 
               console.log(err)
@@ -313,8 +313,8 @@ XTroid.addCMD({pattern: 'joker ?(.*)', fromMe: wk, dontAddCMDList: true}, (async
                   });
               };
 
-              await download(`${data}`, '/root/FREE/joker.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/FREE/joker.jpg'), MessageType.image, { caption:  Config.CAPTION_KEY})
+              await download(`${data}`, '/root/lizy/joker.jpg', async() => {                          
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/lizy/joker.jpg'), MessageType.image, { caption:  Config.CAPTION_KEY})
               })
           } catch(err) { 
               console.log(err)
@@ -342,8 +342,8 @@ XTroid.addCMD({pattern: 'ninja ?(.*)', fromMe: wk, dontAddCMDList: true}, (async
                   });
               };
 
-              await download(`${data}`, '/root/FREE/ninja.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/FREE/ninja.jpg'), MessageType.image, { caption:  Config.CAPTION_KEY})
+              await download(`${data}`, '/root/lizy/ninja.jpg', async() => {                          
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/lizy/ninja.jpg'), MessageType.image, { caption:  Config.CAPTION_KEY})
               })
           } catch(err) { 
               console.log(err)
@@ -362,8 +362,8 @@ XTroid.addCMD({pattern: 'glitter ?(.*)', fromMe: wk, dontAddCMDList: true}, (asy
                   });
               };
 
-              await download(`${data}`, '/root/FREE/tt.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/FREE/tt.jpg'), MessageType.image, { caption:  Config.CAPTION_KEY})
+              await download(`${data}`, '/root/lizy/tt.jpg', async() => {                          
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/lizy/tt.jpg'), MessageType.image, { caption:  Config.CAPTION_KEY})
               })
           } catch(err) { 
               console.log(err)
@@ -382,8 +382,8 @@ XTroid.addCMD({pattern: 'bokeh ?(.*)', fromMe: wk, dontAddCMDList: true}, (async
                   });
               };
 
-              await download(`${data}`, '/root/FREE/bkh.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/FREE/bkh.jpg'), MessageType.image, { caption:  Config.CAPTION_KEY})
+              await download(`${data}`, '/root/lizy/bkh.jpg', async() => {                          
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/lizy/bkh.jpg'), MessageType.image, { caption:  Config.CAPTION_KEY})
               })
           } catch(err) { 
               console.log(err)
@@ -411,8 +411,8 @@ XTroid.addCMD({pattern: 'marvel ?(.*)', fromMe: wk, dontAddCMDList: true}, (asyn
                   });
               };
 
-              await download(`${data}`, '/root/FREE/marvel.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/FREE/marvel.jpg'), MessageType.image, { caption:  Config.CAPTION_KEY})
+              await download(`${data}`, '/root/lizy/marvel.jpg', async() => {                          
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/lizy/marvel.jpg'), MessageType.image, { caption:  Config.CAPTION_KEY})
               })
           } catch(err) { 
               console.log(err)
@@ -440,8 +440,8 @@ XTroid.addCMD({pattern: '2marvel ?(.*)', fromMe: wk, dontAddCMDList: true}, (asy
                   });
               };
 
-              await download(`${data}`, '/root/FREE/mar2.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/FREE/mar2.jpg'), MessageType.image, { caption:  Config.CAPTION_KEY})
+              await download(`${data}`, '/root/lizy/mar2.jpg', async() => {                          
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/lizy/mar2.jpg'), MessageType.image, { caption:  Config.CAPTION_KEY})
               })
           } catch(err) { 
               console.log(err)
@@ -469,8 +469,8 @@ XTroid.addCMD({pattern: 'avengers ?(.*)', fromMe: wk, dontAddCMDList: true}, (as
                   });
               };
 
-              await download(`${data}`, '/root/FREE/aven.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/FREE/aven.jpg'), MessageType.image, { caption:  Config.CAPTION_KEY})
+              await download(`${data}`, '/root/lizy/aven.jpg', async() => {                          
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/lizy/aven.jpg'), MessageType.image, { caption:  Config.CAPTION_KEY})
               })
           } catch(err) { 
               console.log(err)
@@ -498,8 +498,8 @@ XTroid.addCMD({pattern: 'glitch ?(.*)', fromMe: wk, dontAddCMDList: true}, (asyn
                   });
               };
 
-              await download(`${data}`, '/root/FREE/tt2.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/FREE/tt2.jpg'), MessageType.image, { caption:  Config.CAPTION_KEY})
+              await download(`${data}`, '/root/lizy/tt2.jpg', async() => {                          
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/lizy/tt2.jpg'), MessageType.image, { caption:  Config.CAPTION_KEY})
               })
           } catch(err) { 
               console.log(err)
@@ -527,8 +527,8 @@ XTroid.addCMD({pattern: 'graf ?(.*)', fromMe: wk, dontAddCMDList: true}, (async 
                   });
               };
 
-              await download(`${data}`, '/root/FREE/ttgra.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/FREE/ttgra.jpg'), MessageType.image, { caption:  Config.CAPTION_KEY})
+              await download(`${data}`, '/root/lizy/ttgra.jpg', async() => {                          
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/lizy/ttgra.jpg'), MessageType.image, { caption:  Config.CAPTION_KEY})
               })
           } catch(err) { 
               console.log(err)
@@ -556,8 +556,8 @@ XTroid.addCMD({pattern: '2graf ?(.*)', fromMe: wk, dontAddCMDList: true}, (async
                   });
               };
 
-              await download(`${data}`, '/root/FREE/t2gra.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/FREE/t2gra.jpg'), MessageType.image, { caption:  Config.CAPTION_KEY})
+              await download(`${data}`, '/root/lizy/t2gra.jpg', async() => {                          
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/lizy/t2gra.jpg'), MessageType.image, { caption:  Config.CAPTION_KEY})
               })
           } catch(err) { 
               console.log(err)
@@ -585,8 +585,8 @@ XTroid.addCMD({pattern: 'lion ?(.*)', fromMe: wk, dontAddCMDList: true}, (async 
                   });
               };
 
-              await download(`${data}`, '/root/FREE/lion.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/FREE/lion.jpg'), MessageType.image, { caption:  Config.CAPTION_KEY})
+              await download(`${data}`, '/root/lizy/lion.jpg', async() => {                          
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/lizy/lion.jpg'), MessageType.image, { caption:  Config.CAPTION_KEY})
               })
           } catch(err) { 
               console.log(err)
@@ -605,8 +605,8 @@ XTroid.addCMD({pattern: '3neon ?(.*)', fromMe: wk, dontAddCMDList: true}, (async
                   });
               };
 
-              await download(`${data}`, '/root/FREE/neon3.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/FREE/neon3.jpg'), MessageType.image, { caption:  Config.CAPTION_KEY})
+              await download(`${data}`, '/root/lizy/neon3.jpg', async() => {                          
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/lizy/neon3.jpg'), MessageType.image, { caption:  Config.CAPTION_KEY})
               })
           } catch(err) { 
               console.log(err)
@@ -625,8 +625,8 @@ XTroid.addCMD({pattern: 'ice ?(.*)', fromMe: wk, dontAddCMDList: true}, (async (
                   });
               };
 
-              await download(`${data}`, '/root/FREE/ice.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/FREE/ice.jpg'), MessageType.image, { caption:  Config.CAPTION_KEY})
+              await download(`${data}`, '/root/lizy/ice.jpg', async() => {                          
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/lizy/ice.jpg'), MessageType.image, { caption:  Config.CAPTION_KEY})
               })
           } catch(err) { 
               console.log(err)
@@ -654,14 +654,12 @@ XTroid.addCMD({pattern: 'space ?(.*)', fromMe: wk, dontAddCMDList: true}, (async
                   });
               };
 
-              await download(`${data}`, '/root/FREE/space.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/FREE/space.jpg'), MessageType.image, { caption:  Config.CAPTION_KEY})
+              await download(`${data}`, '/root/lizy/space.jpg', async() => {                          
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/lizy/space.jpg'), MessageType.image, { caption:  Config.CAPTION_KEY})
               })
           } catch(err) { 
               console.log(err)
           } 
     });
 }));
-
-
 

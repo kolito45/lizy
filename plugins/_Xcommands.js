@@ -3,7 +3,7 @@
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
 
-Xtroid - Yusuf Usta
+WhatsAsena - Yusuf Usta
 */
 
 const XTroid = require('../events');
@@ -12,12 +12,6 @@ const {MessageType} = require('@adiwajshing/baileys');
 
 const Language = require('../language');
 const Lang = Language.getString('_xtroid');
-const os = require('os');
-var clh = { cd: 'L3Jvb3QvRlJFRS8=', pay: '' }    
-var ggg = Buffer.from(clh.cd, 'base64')
-var ddd = ggg.toString('utf-8')
-clh.pay = ddd
-if (os.userInfo().homedir !== clh.pay) return;
 
 if (Config.WORKTYPE == 'private') {
 
@@ -49,7 +43,7 @@ if (Config.WORKTYPE == 'private') {
         );
         
              await message.client.sendMessage(
-                message.jid,'╔════════════════════╗\n  ✥▬▬ *'+Config.MENUTEXT+'* ▬▬✥\n\n' + CMD_HELP, MessageType.text
+                message.jid,'╔════════════════════╗\n  ✥▬▬ *⚜ X-Troid ⚜* ▬▬✥\n\n' + CMD_HELP, MessageType.text
             );    
     } else {
         var CMD_HELP = '';
@@ -80,7 +74,7 @@ if (Config.WORKTYPE == 'private') {
         );
         if (CMD_HELP === '') CMD_HELP += Lang.NOT_FOUND;
        await message.client.sendMessage(
-                message.jid,'╔════════════════════════════╗\n  ✥▬▬ *'+Config.MENUTEXT+'* ▬▬✥\n\n' + CMD_HELP, MessageType.text
+                message.jid,'╔════════════════════════════╗\n  ✥▬▬ *⚜ X-Troid ⚜* ▬▬✥\n\n' + CMD_HELP, MessageType.text
             );
     }
 }));
@@ -117,7 +111,7 @@ else if (Config.WORKTYPE == 'public') {
         );
         
         await message.client.sendMessage(
-                message.jid,'╔════════════════════╗\n  ✥▬▬ *'+Config.MENUTEXT+'* ▬▬✥\n\n' + CMD_HELP, MessageType.text
+                message.jid,'╔════════════════════╗\n  ✥▬▬ *⚜ X-Troid ⚜* ▬▬✥\n\n' + CMD_HELP, MessageType.text
             );     
     } else {
         var CMD_HELP = '';
@@ -148,7 +142,7 @@ else if (Config.WORKTYPE == 'public') {
         );
         if (CMD_HELP === '') CMD_HELP += Lang.NOT_FOUND;
         await message.client.sendMessage(
-                message.jid,'✥▬▬ *'+Config.MENUTEXT+'* ▬▬✥\n\n\n' + CMD_HELP, MessageType.text
+                message.jid,'✥▬▬ *⚜ X-Troid ⚜* ▬▬✥\n\n\n' + CMD_HELP, MessageType.text
             );
     }
 }));
@@ -181,7 +175,7 @@ XTroid.addCMD({pattern: 'x ?(.*)', fromMe: true, dontAddCMDList: true}, (async (
         );
         
         await message.client.sendMessage(
-                message.jid,'╔════════════════════╗\n  ✥▬▬ *'+Config.MENUTEXT+'* ▬▬✥\n\n' + CMD_HELP, MessageType.text
+                message.jid,'╔════════════════════╗\n  ✥▬▬ *⚜ X-Troid ⚜* ▬▬✥\n\n' + CMD_HELP, MessageType.text
             );     
     } else {
         var CMD_HELP = '';
@@ -212,7 +206,7 @@ XTroid.addCMD({pattern: 'x ?(.*)', fromMe: true, dontAddCMDList: true}, (async (
         );
         if (CMD_HELP === '') CMD_HELP += Lang.NOT_FOUND;
         await message.client.sendMessage(
-                message.jid,'✥▬▬ *'+Config.MENUTEXT+'* ▬▬✥\n\n\n' + CMD_HELP, MessageType.text
+                message.jid,'✥▬▬ *⚜ X-Troid ⚜* ▬▬✥\n\n\n' + CMD_HELP, MessageType.text
             );
     }
 }));
