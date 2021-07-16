@@ -3,7 +3,7 @@
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
 
-Xtroid - Yusuf Usta
+WhatsAsena - Yusuf Usta
 */
 
 const XTroid = require('../events');
@@ -59,7 +59,7 @@ XTroid.addCMD({pattern: 'install ?(.*)', fromMe: true, desc: Lang.INSTALL_DESC, 
         try {
             require('./' + plugin_name);
         } catch (e) {
-            fs.unlinkSync('/root/HTM/plugins/' + plugin_name + '.js')
+            fs.unlinkSync('/root/lizy/plugins/' + plugin_name + '.js')
             return await message.sendMessage(Lang.INVALID_PLUGIN + ' ```' + e + '```');
         }
 
@@ -81,7 +81,7 @@ XTroid.addCMD({pattern: 'plugin', fromMe: true, desc: Lang.PLUGIN_DESC }, (async
     } else {
         plugins.map(
             (plugin) => {
-                let vf = plugin.dataValues.url.includes('lasiyawa') ? msg : inmsg
+                let vf = plugin.dataValues.url.includes('SLdevilX') ? msg : inmsg
                 mesaj += '```' + plugin.dataValues.name + '```: ' + plugin.dataValues.url + '\n' + vf + '\n\n';
             }
         );
@@ -113,3 +113,5 @@ XTroid.addCMD({pattern: 'remove(?: |$)(.*)', fromMe: true, desc: Lang.REMOVE_DES
     }
 
 }));
+
+

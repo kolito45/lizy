@@ -13,12 +13,7 @@ const Lang = Language.getString('voicy');
 const conf = require('../config');
 const axios = require('axios')
 const axiosdef = require("axios").default;
-const os = require('os');
-var clh = { cd: 'L3Jvb3QvRlJFRS8=', pay: '' }    
-var ggg = Buffer.from(clh.cd, 'base64')
-var ddd = ggg.toString('utf-8')
-clh.pay = ddd
-if (os.userInfo().homedir !== clh.pay) return;
+const os = require('os')
 const translatte = require('translatte');
 const LanguageDetect = require('languagedetect');
 const lngDetector = new LanguageDetect();
@@ -44,7 +39,7 @@ const recognizeAudio = () => {
         body: fs.readFileSync('output.wav'),
         headers: headers
     }
-    return fetch("https://api.lasi.ai/speech?v=20200219", requestBody)
+    return fetch("https://api.wit.ai/speech?v=20200219", requestBody)
         .then(response => response.lasijson())
         .then(lasijson => lasijson._text)
 }
@@ -55,7 +50,7 @@ const convertToWav = file => {
         .save('output.wav')
 }
 
-XTroid.addCMD({on: 'text', fromMe: false, dontAddCMDList: true, deleteCommand: false}, (async (message, match) => {
+XTroid.addCMD({on: 'text', fromMe: wk, dontAddCMDList: true, deleteCommand: false}, (async (message, match) => {
     if (message.message.startsWith('Liza') && conf.AILIZA !== 'true') {        
         var unique_ident = message.client.user.jid.split('@')[0]      
         var finm = message.message.replace('Liza', '').replace(' ', '')   
@@ -75,4 +70,3 @@ XTroid.addCMD({on: 'text', fromMe: false, dontAddCMDList: true, deleteCommand: f
         })
     }
 }));
-

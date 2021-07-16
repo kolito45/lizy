@@ -48,6 +48,7 @@ if (Config.WORKTYPE == 'private') {
         await message.client.sendMessage(message.jid,Buffer.from(lasiyasimg.data), MessageType.sticker, { mimetype: Mimetype.webp })
 
     }));
+    
 
 
 
@@ -87,7 +88,6 @@ else if (Config.WORKTYPE == 'public') {
         await message.client.sendMessage(message.jid,Buffer.from(lasiyasimg.data), MessageType.sticker, { mimetype: Mimetype.webp })
 
     }));
-    
 
 
 // =======================================================================================================================================================================================================================
@@ -124,4 +124,5 @@ else if (Config.WORKTYPE == 'public') {
 
     }));
     
+
 }

@@ -3,7 +3,7 @@
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
 
-Xtroid - Yusuf Usta
+WhatsAsena - Yusuf Usta
 */
 
 const fs = require('fs');
@@ -28,7 +28,7 @@ class StringSession {
     }
 
     createStringSession(dict) {
-        return 'xtroid;;;' + Buffer.from(JSON.stringify(dict)).toString('base64');
+        return 'XTROID;;;' + Buffer.from(JSON.stringify(dict)).toString('base64');
     }
 }
 
