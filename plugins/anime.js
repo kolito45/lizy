@@ -25,7 +25,6 @@ if (Config.WORKTYPE == 'private') {
         var lasiyasimg = await axios.get(`https://docs-jojo.herokuapp.com/api/randomloli`, { responseType: 'arraybuffer' })
 
         await message.sendMessage(Buffer.from(lasiyasimg.data), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
-    });
     }));
 
 }
@@ -36,7 +35,6 @@ else if (Config.WORKTYPE == 'public') {
         var lasiyasimg = await axios.get(`https://docs-jojo.herokuapp.com/api/randomloli`, { responseType: 'arraybuffer' })
 
         await message.sendMessage(Buffer.from(lasiyasimg.data), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
-    });
     }));
 
 
