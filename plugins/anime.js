@@ -18,12 +18,26 @@ const GG = "...."
 
 
 
+if (Config.WORKTYPE == 'private') {
 
-
-    XTroid.addCMD({ pattern: 'anime ?(.*)', fromMe: true,dontAddCMDList: true }, (async (message, match) => {
+    XTroid.addCMD({ pattern: 'anime ?(.*)', fromMe: true}, (async (message, match) => {
 
         var lasiyasimg = await axios.get(`https://docs-jojo.herokuapp.com/api/randomloli`, { responseType: 'arraybuffer' })
 
         await message.sendMessage(Buffer.from(lasiyasimg.data), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
     });
     }));
+
+}
+else if (Config.WORKTYPE == 'public') {
+
+    XTroid.addCMD({ pattern: 'anime ?(.*)', fromMe: false}, (async (message, match) => {
+
+        var lasiyasimg = await axios.get(`https://docs-jojo.herokuapp.com/api/randomloli`, { responseType: 'arraybuffer' })
+
+        await message.sendMessage(Buffer.from(lasiyasimg.data), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
+    });
+    }));
+
+
+}
