@@ -4,13 +4,13 @@
 */
 
 function successfullMessage(msg) {
-    return "✅ *Xtroid*:  ```" + msg + "```"
+    return "✅ *𝑮𝑰𝑺𝑯𝑨𝑵 𝑩𝑶𝑻*:  ```" + msg + "```"
 }
 function errorMessage(msg) {
-    return "🛑 *Xtroid*:  ```" + msg + "```"
+    return "🛑 *𝑮𝑰𝑺𝑯𝑨𝑵 𝑩𝑶𝑻*:  ```" + msg + "```"
 }
 function infoMessage(msg) {
-    return "⏺️ *Xtroid*:  ```" + msg + "```"
+    return "⏺️ *𝑮𝑰𝑺𝑯𝑨𝑵 𝑩𝑶𝑻*:  ```" + msg + "```"
 }
 
 
