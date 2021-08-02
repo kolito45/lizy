@@ -41,6 +41,7 @@ module.exports = {
     BANMSG: process.env.BAN_MESSAGE === undefined ? 'default' : process.env.BAN_MESSAGE,
     AFKMSG: process.env.AFK_MESSAGE === undefined ? 'default' : process.env.AFK_MESSAGE,
     HANDLERS: process.env.HANDLERS === undefined ? '^[.!;]' : process.env.HANDLERS,
+    MENUTEXT:"𝙂𝙞𝙨𝙝𝙖𝙣 𝘽𝙤𝙩",
     GIF_WEL: process.env.GIF_WEL === undefined ?'https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/GTYSdDW/welcome-scenery_w1su4ez-h__76bbedbfeb6556bb8ba305dc5d7de900__P360.mp4' : process.env.GIF_WEL,
     GIF_BYE: process.env.GIF_BYE === undefined ?'https://webfilesdanuma.herokuapp.com/stream/14' : process.env.GIF_BYE,
     CAPTION_KEY: process.env.CP === undefined ?'⚜ X-Troid ⚜' : process.env.CP,
