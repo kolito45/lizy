@@ -170,16 +170,17 @@ if (Config.WORKTYPE == 'private') {
 
 	        var r_text = new Array ();
 
-        r_text[1] = "https://telegra.ph/file/2bb85d7b80b9ad96bcb96.jpg";
-        r_text[2] ="https://telegra.ph/file/b86ce85acea2d357ccdb6.jpg";
-        r_text[3] ="https://telegra.ph/file/49d7fe9161adfbbd54eca.jpg";
-        r_text[4] ="https://telegra.ph/file/46a5a8c17e3cc7973d826.jpg";
-        r_text[5] ="https://telegra.ph/file/cdf86aa4f05711fd31ec6.jpg";
-        r_text[6] ="https://telegra.ph/file/2bb85d7b80b9ad96bcb96.jpg";
-        r_text[7] ="https://telegra.ph/file/2c8ee6004b1c1bff815e9.jpg";
-        r_text[8] ="https://telegra.ph/file/5d59a99b9a3a8fc5c0dda.jpg";
-        r_text[9] ="https://telegra.ph/file/c53359cc0100ba1241dd3.jpg";
-        r_text[10] ="https://telegra.ph/file/a143b34753c8434058e87.jpg";
+
+        r_text[1] = "https://telegra.ph/file/1c98065531947a1e6f2ff.jpg";
+        r_text[2] ="https://telegra.ph/file/1c98065531947a1e6f2ff.jpg";
+        r_text[3] ="https://telegra.ph/file/1c98065531947a1e6f2ff.jpg";
+        r_text[4] ="https://telegra.ph/file/1c98065531947a1e6f2ff.jpg";
+        r_text[5] ="https://telegra.ph/file/1c98065531947a1e6f2ff.jpg";
+        r_text[6] ="https://telegra.ph/file/1c98065531947a1e6f2ff.jpg";
+        r_text[7] ="https://telegra.ph/file/1c98065531947a1e6f2ff.jpg";
+        r_text[8] ="https://telegra.ph/file/1c98065531947a1e6f2ff.jpg";
+        r_text[9] ="https://telegra.ph/file/1c98065531947a1e6f2ff.jpg";
+        r_text[10] ="https://telegra.ph/file/1c98065531947a1e6f2ff.jpg";
       
 
 var i = Math.floor(11*Math.random())
@@ -382,16 +383,16 @@ else if (Config.WORKTYPE == 'public') {
 
 	        var r_text = new Array ();
 
-        r_text[1] = "https://telegra.ph/file/2bb85d7b80b9ad96bcb96.jpg";
-        r_text[2] ="https://telegra.ph/file/b86ce85acea2d357ccdb6.jpg";
-        r_text[3] ="https://telegra.ph/file/49d7fe9161adfbbd54eca.jpg";
-        r_text[4] ="https://telegra.ph/file/46a5a8c17e3cc7973d826.jpg";
-        r_text[5] ="https://telegra.ph/file/cdf86aa4f05711fd31ec6.jpg";
-        r_text[6] ="https://telegra.ph/file/2bb85d7b80b9ad96bcb96.jpg";
-        r_text[7] ="https://telegra.ph/file/2c8ee6004b1c1bff815e9.jpg";
-        r_text[8] ="https://telegra.ph/file/5d59a99b9a3a8fc5c0dda.jpg";
-        r_text[9] ="https://telegra.ph/file/c53359cc0100ba1241dd3.jpg";
-        r_text[10] ="https://telegra.ph/file/a143b34753c8434058e87.jpg";
+        r_text[1] = "https://telegra.ph/file/1c98065531947a1e6f2ff.jpg";
+        r_text[2] ="https://telegra.ph/file/1c98065531947a1e6f2ff.jpg";
+        r_text[3] ="https://telegra.ph/file/1c98065531947a1e6f2ff.jpg";
+        r_text[4] ="https://telegra.ph/file/1c98065531947a1e6f2ff.jpg";
+        r_text[5] ="https://telegra.ph/file/1c98065531947a1e6f2ff.jpg";
+        r_text[6] ="https://telegra.ph/file/1c98065531947a1e6f2ff.jpg";
+        r_text[7] ="https://telegra.ph/file/1c98065531947a1e6f2ff.jpg";
+        r_text[8] ="https://telegra.ph/file/1c98065531947a1e6f2ff.jpg";
+        r_text[9] ="https://telegra.ph/file/1c98065531947a1e6f2ff.jpg";
+        r_text[10] ="https://telegra.ph/file/1c98065531947a1e6f2ff.jpg";
 
 var i = Math.floor(11*Math.random())
 var lasiimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
