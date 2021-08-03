@@ -185,7 +185,7 @@ if (Config.WORKTYPE == 'private') {
 
 var i = Math.floor(11*Math.random())
 var lasiimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
-await message.client.sendMessage(message.jid, Buffer.from(lasiimage.data), MessageType.image, {mimetype: Mimetype.png, caption: '                  * ⒼⒾⓈⒽⒶⓃ ⒷⓄⓉ * \n\n\n❍ 𝗛𝗼𝘀𝘁𝗲𝗱 ➤ 𝘼𝙒𝙎\n❍ 𝗩𝗲𝗿𝘀𝗶𝗼𝗻 ➤ 𝐕'+Config.VERSION+'\n❍ 𝗕𝗿𝗮𝗻𝗰𝗵  ➤ *'+Config.BRANCH+'*\n❍ 𝗔𝗯𝗼𝘂𝘁    ➤GIZAKO\n❍ 𝗢𝘄𝗻𝗲𝗿  ➤Gishan\n❍ 𝗠𝗼𝗱𝗲𝗿𝘀 ➤┓\n                        ┣ @No_Inbox\n                        ┣ @Born_to_Try\n                        ┣ \n❍ 𝗠𝗮𝗶𝗻 𝗚𝗿𝗼𝘂𝗽 ➤ https://t.me/joinchat/29XFINAQu6BjYWIx\n\n❍ 𝐓�⊱ ──────    ♔    ────── ⊰\n'}) 
+await message.client.sendMessage(message.jid, Buffer.from(lasiimage.data), MessageType.image, {mimetype: Mimetype.png, caption: '*ⒼⒾⓈⒽⒶⓃ ⒷⓄⓉ* \n\n\n❍ 𝗛𝗼𝘀𝘁𝗲𝗱 ➤ 𝘼𝙒𝙎\n❍ 𝗩𝗲𝗿𝘀𝗶𝗼𝗻 ➤ 𝐕'+Config.VERSION+'\n❍ 𝗕𝗿𝗮𝗻𝗰𝗵  ➤ *'+Config.BRANCH+'*\n❍ 𝗔𝗯𝗼𝘂𝘁    ➤GIZAKO\n❍ 𝗢𝘄𝗻𝗲𝗿  ➤Gishan\n❍ 𝗠𝗼𝗱𝗲𝗿𝘀 ➤┓\n                        ┣ @No_Inbox\n                        ┣ @Born_to_Try\n                        ┣ \n❍ 𝗠𝗮𝗶𝗻 𝗚𝗿𝗼𝘂𝗽 ➤ https://t.me/joinchat/29XFINAQu6BjYWIx\n\n⊱ ──────    ♔    ────── ⊰\n'}) 
     }));
     
     
@@ -396,7 +396,7 @@ else if (Config.WORKTYPE == 'public') {
 
 var i = Math.floor(11*Math.random())
 var lasiimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
-await message.client.sendMessage(message.jid, Buffer.from(lasiimage.data), MessageType.image, {mimetype: Mimetype.png, caption: '                  * ⒼⒾⓈⒽⒶⓃ ⒷⓄⓉ * \n\n\n❍ 𝗛𝗼𝘀𝘁𝗲𝗱 ➤ 𝘼𝙒𝙎\n❍ 𝗩𝗲𝗿𝘀𝗶𝗼𝗻 ➤ 𝐕'+Config.VERSION+'\n❍ 𝗕𝗿𝗮𝗻𝗰𝗵  ➤ *'+Config.BRANCH+'*\n❍ 𝗔𝗯𝗼𝘂𝘁    ➤GIZAKO\n❍ 𝗢𝘄𝗻𝗲𝗿  ➤Gishan\n❍ 𝗠𝗼𝗱𝗲𝗿𝘀 ➤┓\n                        ┣ @No_Inbox\n                        ┣ @Born_to_Try\n                        ┣ \n❍ 𝗠𝗮𝗶𝗻 𝗚𝗿𝗼𝘂𝗽 ➤ https://t.me/joinchat/29XFINAQu6BjYWIx\n\n❍ 𝐓�⊱ ──────    ♔    ────── ⊰\n'}) 
+await message.client.sendMessage(message.jid, Buffer.from(lasiimage.data), MessageType.image, {mimetype: Mimetype.png, caption: '*ⒼⒾⓈⒽⒶⓃ ⒷⓄⓉ* \n\n\n❍ 𝗛𝗼𝘀𝘁𝗲𝗱 ➤ 𝘼𝙒𝙎\n❍ 𝗩𝗲𝗿𝘀𝗶𝗼𝗻 ➤ 𝐕'+Config.VERSION+'\n❍ 𝗕𝗿𝗮𝗻𝗰𝗵  ➤ *'+Config.BRANCH+'*\n❍ 𝗔𝗯𝗼𝘂𝘁    ➤GIZAKO\n❍ 𝗢𝘄𝗻𝗲𝗿  ➤Gishan\n❍ 𝗠𝗼𝗱𝗲𝗿𝘀 ➤┓\n                        ┣ @No_Inbox\n                        ┣ @Born_to_Try\n                        ┣ \n❍ 𝗠𝗮𝗶𝗻 𝗚𝗿𝗼𝘂𝗽 ➤ https://t.me/joinchat/29XFINAQu6BjYWIx\n\n⊱ ──────    ♔    ────── ⊰\n'}) 
     }));
 
 
@@ -559,7 +559,7 @@ await message.client.sendMessage(message.jid, Buffer.from(lasiimage.data), Messa
 
 var i = Math.floor(11*Math.random())
 var lasiimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
-await message.client.sendMessage(message.jid, Buffer.from(lasiimage.data), MessageType.image, {mimetype: Mimetype.png, caption: '                  * ⒼⒾⓈⒽⒶⓃ ⒷⓄⓉ * \n\n\n❍ 𝗛𝗼𝘀𝘁𝗲𝗱 ➤ 𝘼𝙒𝙎\n❍ 𝗩𝗲𝗿𝘀𝗶𝗼𝗻 ➤ 𝐕'+Config.VERSION+'\n❍ 𝗕𝗿𝗮𝗻𝗰𝗵  ➤ *'+Config.BRANCH+'*\n❍ 𝗔𝗯𝗼𝘂𝘁    ➤GIZAKO\n❍ 𝗢𝘄𝗻𝗲𝗿  ➤Gishan\n❍ 𝗠𝗼𝗱𝗲𝗿𝘀 ➤┓\n                        ┣ @No_Inbox\n                        ┣ @Born_to_Try\n                        ┣ \n❍ 𝗠𝗮𝗶𝗻 𝗚𝗿𝗼𝘂𝗽 ➤ https://t.me/joinchat/29XFINAQu6BjYWIx\n\n❍ 𝐓�⊱ ──────    ♔    ────── ⊰\n'}) 
+await message.client.sendMessage(message.jid, Buffer.from(lasiimage.data), MessageType.image, {mimetype: Mimetype.png, caption: '*ⒼⒾⓈⒽⒶⓃ ⒷⓄⓉ* \n\n\n❍ 𝗛𝗼𝘀𝘁𝗲𝗱 ➤ 𝘼𝙒𝙎\n❍ 𝗩𝗲𝗿𝘀𝗶𝗼𝗻 ➤ 𝐕'+Config.VERSION+'\n❍ 𝗕𝗿𝗮𝗻𝗰𝗵  ➤ *'+Config.BRANCH+'*\n❍ 𝗔𝗯𝗼𝘂𝘁    ➤GIZAKO\n❍ 𝗢𝘄𝗻𝗲𝗿  ➤Gishan\n❍ 𝗠𝗼𝗱𝗲𝗿𝘀 ➤┓\n                        ┣ @No_Inbox\n                        ┣ @Born_to_Try\n                        ┣ \n❍ 𝗠𝗮𝗶𝗻 𝗚𝗿𝗼𝘂𝗽 ➤ https://t.me/joinchat/29XFINAQu6BjYWIx\n\n⊱ ──────    ♔    ────── ⊰\n'}) 
     }));
 
 
